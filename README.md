@@ -1,14 +1,14 @@
-# 🏠 House Price Prediction Using Machine Learning
+# House Price Prediction Using Machine Learning
 
 A machine learning project that analyzes housing data and predicts house sale prices using Python, exploratory data analysis, data preprocessing, regression models, and CatBoost.
 
-## 📌 Project Overview
+##  Project Overview
 
 The objective of this project is to develop a machine learning model that predicts residential house sale prices based on property characteristics, including overall quality, living area, lot size, garage features, basement area, construction year, and other housing attributes.
 
 The project follows a complete machine learning workflow, from understanding and analyzing the dataset to training regression models, comparing their performance, and evaluating predictions on unseen test data.
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 * Explore and understand the housing dataset.
 * Perform exploratory data analysis (EDA).
@@ -21,7 +21,7 @@ The project follows a complete machine learning workflow, from understanding and
 * Analyze feature importance to understand influential predictors.
 * Generate house price predictions using the trained model.
 
-## 📊 Dataset Information
+##  Dataset Information
 
 The notebook loads the dataset from a CSV file named `data.csv`.
 
@@ -57,7 +57,7 @@ The model uses `SalePrice` as the target variable. The `Id` column is excluded f
 
 **Note:** The notebook does not specify the original dataset download URL. Add the dataset source here once it has been verified.
 
-## 🛠️ Technologies and Libraries
+##  Technologies and Libraries
 
 The project uses the following Python libraries:
 
@@ -70,7 +70,7 @@ The project uses the following Python libraries:
 * **CatBoost** — Gradient boosting regression.
 * **Jupyter Notebook** — Interactive development and analysis.
 
-## 🔍 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 Exploratory data analysis was performed to understand the dataset and identify patterns that may influence house prices.
 
@@ -88,7 +88,7 @@ The correlation analysis identified `OverallQual`, `GrLivArea`, `GarageCars`, `G
 
 Correlation indicates an association, not necessarily a causal relationship.
 
-## 🧹 Data Preprocessing
+##   Data Preprocessing
 
 The dataset contains both numerical and categorical features, along with missing values.
 
@@ -119,7 +119,7 @@ The dataset is divided into training and testing subsets:
 
 The same split configuration is used to make the model comparisons reproducible.
 
-## 🤖 Machine Learning Models
+##  Machine Learning Models
 
 The notebook evaluates four regression approaches.
 
@@ -163,7 +163,7 @@ The model is configured with:
 
 The final CatBoost model is trained using the preprocessing pipeline and evaluated on the held-out test set.
 
-## ⚙️ Hyperparameter Tuning
+##  Hyperparameter Tuning
 
 GridSearchCV is used to tune Ridge Regression, Random Forest, and Gradient Boosting.
 
@@ -173,7 +173,7 @@ The best parameters are selected based on cross-validation performance.
 
 CatBoost is trained separately using the specified configuration above; the notebook does not apply GridSearchCV to that model.
 
-## 📈 Model Evaluation
+##  Model Evaluation
 
 The models are evaluated using two metrics.
 
@@ -213,7 +213,7 @@ RMSE is expressed in the same units as the target variable. The interpretation o
 
 These results describe the particular train-test split used in the notebook and do not guarantee the same performance on other datasets.
 
-## 📊 Prediction Visualization
+##  Prediction Visualization
 
 The notebook generates an actual-versus-predicted scatter plot to compare predicted sale prices with observed values.
 
@@ -221,7 +221,7 @@ A reference line represents perfect predictions. Points closer to this line indi
 
 This visualization helps identify how closely the model's predictions match the actual sale prices.
 
-## 🔑 Feature Importance
+##  Feature Importance
 
 Feature importance is extracted from the trained CatBoost model and visualized for the top 25 features.
 
@@ -240,7 +240,7 @@ These results suggest that property quality, living area, basement characteristi
 
 Feature importance describes the model's use of information for prediction. It does not establish that a feature causes a change in house prices.
 
-## 💻 Project Structure
+##  Project Structure
 
 The repository is organized as follows:
 
@@ -260,7 +260,7 @@ house-price-prediction/
 
 The dataset and requirements file should be added to the repository if you want others to reproduce the analysis. The structure above represents the recommended layout.
 
-## 🚀 Installation and Setup
+##  Installation and Setup
 
 Follow these steps to run the project locally.
 
@@ -337,7 +337,7 @@ Execute the notebook cells sequentially, from importing libraries and loading th
 * The model is a learning and analysis project, not a validated professional property valuation service.
 * No standalone web application or deployment interface is included in the notebook.
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 Potential improvements include:
 
@@ -350,7 +350,7 @@ Potential improvements include:
 * Build an interactive house price prediction interface using Streamlit or another suitable framework.
 * Improve project reproducibility by documenting the Python environment and dataset version.
 
-## 📝 Conclusion
+##  Conclusion
 
 This project demonstrates an end-to-end machine learning workflow for residential house price prediction.
 
@@ -360,7 +360,7 @@ Among the evaluated models, CatBoost achieved the strongest recorded test-set pe
 
 The project provides practical experience with Python, Scikit-learn, CatBoost, and machine learning techniques for structured tabular data.
 
-## 👨‍💻 Author
+##  Author
 
 **Faizan Ali**
 
